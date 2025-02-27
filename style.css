@@ -372,6 +372,25 @@ form .btn2{
     margin-top: 20px;
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.box {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
 /* ---------------CSS for Small Screens---------------- */
 nav .fas{
     display: none;
@@ -448,20 +467,3 @@ nav .fas{
 
 
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.4;
-    }
-
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-.box {
-    animation: appear 5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
